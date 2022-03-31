@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&display=swap');
+/* css reset  */
+/* this is css file  */
+
+/*:root {*/
+
+/*    --mn-bg-color: rgb(51, 3, 51);*/
+
+/*    --font1 :'Patrick Hand', cursive;*/
+
+/*    --font2 :'Merriweather Sans', sans-serif;*/
+
+/*}*/
+
+* {
+    /* font-family: 'Balsamiq Sans', cursive; */
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* utility classes starts here  */
+
+.font1 {
+    font-family: 'Patrick Hand', cursive;
+}
+
+.font2 {
+    font-family: 'Anton', sans-serif;
+}
+
+.font3 {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.textcenter {
+    text-align: center;
+}
+.yellow{
+    color: #feda47;
+}
+.aliceblue{
+    color: aliceblue;
+}
+.h-primary {
+    /*font-family: 'Patrick Hand', cursive;*/
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.h-secondary {
+    /*font-family: 'Patrick Hand', cursive;*/
+    text-align: center;
+    font-size: 1.5rem;
+    /*padding: 12px;*/
+    font-weight: bold;
+    /*color:cyan;*/
+}
+
+.h-ternary {
+    /*font-family: 'Patrick Hand', cursive;*/
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.givebluefont {
+    color: cyan;
+}
+
+.givegreyfont {
+    color: grey;
+}
+
+.chartreuse {
+    color: chartreuse;
+}
+
+/*.maroon{*/
+
+/*    color:maroon;*/
+
+/*}*/
+
+.bottom-border {
+    border-bottom: black;
+}
+
+.active {
+    color: black;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.hr-nav {
+    width: 70vw;
+    margin-left: 32px;
+    /* color: grey; */
+    /* background: #000000; */
+}
+
+/* .btn {
+    padding: 6px 20px;
+    color: black;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid black;
+} */
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.none {
+    display: none;
+}
+
+/* utility section ends here  */
+/* login signup modal css starts here  */
+.login_signup{
+    padding: 10px;
+}
+.admin-login .user-login{
+    width: 20%;
+    margin: 20px;
+}
+
+
+
+
+
+/* navbar styling starts here */
+
+/* logo starts here  */
+
+#logo img {
+    width: 39px;
+    margin: 5px;
+}
+.logoImg img{
+    width: 30px;
+    margin:5px;
+}
+.logoImg img:hover{
+    width: 35px;
+}
+
+#navbar {
+    display: flex;
+    height: 60px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    position: sticky;
+    top: 0px;
+    transition: 0.4s;
+    z-index: 3;
+    /* background: #000000; */
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: '';
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    opacity: 0.8;
+    /*border-radius:0px 0px 20px 20px;*/
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 40px;
+    padding: 0px;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 2px 8px;
+    margin: 8px;
+    text-decoration: none;
+}
+
+/* navbar styling ends here  */
+
+/*
+sidepanel css starts ehere */
+
+/* css for sidepanel starts here  */
+
+#sidepanel {
+    display: none;
+}
+
+.sidepanel {
+    height: 100%;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+
+.openbtn {
+    font-size: 33px;
+    cursor: pointer;
+    background-color: transparent;
+    color: antiquewhite;
+    padding: 1px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* home section starts styling starts here */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background:#000000;
+}
+
+#home img {
+    width: 250px;
+}
+
+
+
+.banner span {
+    font-size: 45px;
+    /*font-family: 'Patrick Hand', cursive;*/
+    color: rgb(205 204 204);
+    /* text-shadow: 2px 2px 5px rgb(14, 250, 120); */
+}
+
+.heading span {
+    font-size: 55px;
+    color: #feda47;
+    /*font-family: 'Patrick Hand', cursive;*/
+}
+
+
+
+
+
+
+
+/* unique section starts here  */
+
+#unique {
+    /*border: 2px solid black;*/
+    background: #fbdfc7;
+}
+
+#unique-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#unique-container img {
+    width: 210px;
+    border-radius: 200px;
+}
+
+/* unique section ends here  */
+
+/*css of divider */
+
+.divider {
+    width: 70%;
+    margin: 10px 10px 10px 100px;
+    background: #f1f1f1;
+    height: 4px;
+}
+
+/* about us section starts here  */
+
+#about {
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(1 43 81);
+}
+
+#inner-about {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#about img {
+    width: 410px;
+    border-radius: 200px;
+}
+
+.decorate {
+    font-weight: bold;
+}
+
+#aboutus {
+    font-size: 40px;
+    color:aliceblue;
+}
+
+#para {
+    padding: 95px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+    color: aliceblue;
+}
+
+/* about us section ends here  */
+
+
+/* contact section starts here  */
+
+#contact {
+    display: flex;
+    font-family: 'Patrick Hand', cursive;
+    justify-content:  space-evenly;
+    /* width: 100%; */
+    height: 269px;
+    background-color: #000000;
+    padding: 25px 90px;
+}
+
+.contactbox {
+    /* border: 1px solid black; */
+    width: 25%;
+    margin: 7px;
+}
+
+.contactbox p {
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    color: grey;
+}
+
+/* .contactbox p:hover{
+    font-size: 1.3rem;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(52, 6, 90); */
+
+.contactbox button {
+    width: 130px;
+    height: 50px;
+    margin: 5px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.contactbox button a {
+    text-decoration: none;
+}
+
+.contactbox button:hover {
+    width: 135px;
+    height: 55px;
+    margin: 0px 4px;
+}
+
+/* .time{
+    font-size: 1px;
+} */
+
+/* footer section starts here  */
+
+#footer {
+    padding: 5px;
+    height: 35px;
+    background-color: #feda47;
+    color: black;
+    /* if you want to stick your footer to the bottom then use "position: sticky; bottom: 0px;" or else "position: relative;" */
+    /* position: relative; */
+    position: sticky;
+    bottom: 0px;
+    transition: 0.4s;
+}
+
+/* if you want a black shadow behind the footer then uncomment the below block of codes */
+
+/* #footer::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    z-index: -1;
+    opacity: 0.54;
+
+} */
+
+/* footer ends here  */
+
+/* css for faq page starts here  */
+
+.faq {
+    width: 80vw;
+    margin: 30px auto;
+}
+
+/* css for mobile devices strats here */
+
+@media screen and (max-width: 600px) {
+    /* utility classes  */
+    .h-primary {
+        font-size: 30px;
+    }
+    .h-secondary {
+        font-size: 20px;
+    }
+    .h-ternary {
+        font-size: 30px;
+        padding: 0px;
+    }
+    /* navigation  */
+    #navbar {
+        /*flex-direction: column;*/
+        /* height: 100%; */
+        /* align-items: center; */
+        justify-content: space-between;
+        /* background: black; */
+    }
+    /* #navbar::before{
+        opacity: 0.7;
+    } */
+
+    /*#navbar ul li a {*/
+    /*    padding: 1px 9px;*/
+    /*}*/
+    #navbar ul {
+        display: none;
+    }
+    /*#navbar ul li {*/
+    /*    font-size: 18px;*/
+    /*    height: 42px;*/
+    /*    margin: -1px;*/
+    /*}*/
+    /*side css for mobile starsts here */
+    #sidepanel {
+        display: block;
+    }
+    /* home section  */
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 14px;
+        justify-content: center;
+        align-items: center;
+        height: 470px;
+    }
+    #home::before {
+        height: 486px;
+        padding: 5;
+    }
+    .banner span {
+        font-size: 24px;
+        /*font-family: 'Patrick Hand', cursive;*/
+    }
+    .heading span {
+        font-size: 27px;
+        /*font-family: 'Patrick Hand', cursive;*/
+    }
+    /* unique section strats here  */
+    #ul-content {
+        text-align: left;
+        margin: 5px 70px;
+    }
+    #unique {
+        height: auto;
+    }
+    #unique::before {
+        height: 457px;
+    }
+    /* unique scetion ends here  */
+    /* about us section strats here  */
+    
+    #about img {
+        width: 244px;
+        border-radius: 200px;
+    }
+    #inner-about {
+        flex-direction: column;
+    }
+    #para {
+        padding: 1px;
+    }
+    #para .p1 {
+        font-size: 20px;
+    }
+    #aboutus {
+        font-size: 41px;
+    }
+    /* social section  */
+    #social {
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .items img {
+        width: 50px;
+        height: 50px;
+        margin: 0px 16px;
+    }
+    .items img:hover {
+        width: 55px;
+        height: 55px;
+    }
+    /* contact sections starts here  */
+    #contact {
+        flex-direction: row;
+        /*justify-content: center;*/
+        /*flex-wrap: wrap;   */
+        height: auto;
+        padding: 19px 12px;
+        background-color: black;
+    }
+    .contactbox {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .contactbox p {
+        font-size: 16px;
+        padding: 1px;
+        margin: 0px;
+    }
+    .contactbox button {
+        width: 90px;
+        height: 40px;
+        margin: 3px;
+        /*border:none;*/
+    }
+    .contactbox button a {
+        text-decoration: none;
+        color: black;
+    }
+    .contactbox button:hover {
+        width: 95px;
+        height: 45px;
+        margin: 0px 4px;
+    }
+    #direct {
+        font-size: 013px;
+        color: black;
+    }
+    /*below code is for product>searchbar*/
+    #mysearch {
+        /* margin: auto; */
+        width: 80vw;
+    }
+    #myInput {
+        width: 80vw;
+        height: 30px;
+        /* padding: 5px; */
+        font-size: 25px;
+        /* border: 1px solid #ddd; */
+        /* border-radius: 10px; */
+    }
+    #myInput:hover {
+        width: 80vw;
+        height: 30px;
+    }
+    /* below ending bracket is a parent bracket  */
+}

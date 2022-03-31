@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="typed.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits & Services</title>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="mylogo">
+        </div>
+        <div id="sidepanel">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="logo" style="  width: 90vw;margin: auto;">
+                <img src="images/logo.png" alt="mylogo">
+            </div>
+            <a href="index.html" onclick="closeNav()">Home</a>
+            <!-- <a href="index.html#testimonial" onclick="closeNav()" >Testimonial</a> -->
+            <!-- <a href="index.html#about" onclick="closeNav()">About us</a> -->
+            <a href="index.html#contact" onclick="closeNav()">Contact-us</a>
+            <a href="faq.html" onclick="closeNav()">FAQ</a>
+            <div class="hr-nav" style=" width: 70vw; margin-left: 32px; height:2px; background:#2f2d2d"></div>
+            <a href="signup.html" onclick="closeNav()">Sign-up</a>
+            <a href="signin.html" onclick="closeNav()">Sign-in</a>
+
+            <div class="hr-nav" style=" width: 70vw; margin-left: 32px; height:2px; background:#2f2d2d"></div>
+            <a href="#" onclick="closeNav()">Developer</a>
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home" class="">Home</a></li>
+            <li class="item"><a href="products.html" class="">Products</a></li>
+            <!-- <li class="item"><a href="#about" class="">About us</a></li> -->
+            <!-- <li class="item"><a href="#about">Services</a></li> -->
+            <!-- <li class="item"><a href="#testimonial" class="">Testimonial</a></li> -->
+            <li class="item"><a href="#contact">Contact-us</a></li>
+            <li class="item"><a href="faq.html">FAQ</a></li>
+            <li class="item"><a href="signup.html">Sign-up</a></li>
+            <li class="item"><a href="signin.html">Sign-in</a></li>
+            <li class="item"><a href="#" onclick="closeNav()" >Developer</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- services section strats here  -->
+    <section class=" services-container" id="services">
+        <div id="productheading">YourKart</div>
+        <!-- <p>Click on the buttons inside the tabbed menu:</p> -->
+
+        <div class="tab">
+            <button class="tablinks" id="defaultOpen" onclick="opentab(event, 'men')">Men</button>
+            <button class="tablinks" onclick="opentab(event, 'women')">Women</button>
+            <button class="tablinks" onclick="opentab(event, 'kids')">Kids</button>
+            <button class="tablinks" onclick="opentab(event, 'accesories')">Accessories</button>
+            <button class="tablinks"  onclick="opentab(event, 'sports')"> Sports</button>
+            <button class="tablinks"  onclick="opentab(event, 'fruits')"> Fruits</button>
+            <button class="tablinks" onclick="opentab(event, 'SpecialServices')">Special Services</button>
+            <button class="tablinks" onclick="opentab(event, 'Services')">Services</button>
+        </div>
+
+       
+        
+        <!-- <div id="men" class="tabcontent">
+            <div id="service">
+               
+            </div>
+        </div>
+        <div id="women" class="tabcontent">
+            <div id="service">
+               
+            </div>
+        </div>
+        <div id="kids" class="tabcontent">
+            <div id="service">
+               
+            </div>
+        </div>
+        <div id="accesories" class="tabcontent">
+            <div id="service">
+               
+            </div>
+        </div>
+        <div id="sports" class="tabcontent">
+            <div id="service">
+               
+            </div>
+        </div> -->
+        <div id="fruits" class="tabcontent">
+            <!--<div class="contentheading">All fruits</div>-->
+            <div id="mysearch" class="mysearch">
+                <input type="text" id="myInput" class="myInput" onkeyup="myFunction()"
+                    placeholder="Search for Fruits..">
+            </div>
+            <!--this is for search result -->
+            <div id="search-result">
+                <div id="num-result" class="px-center"></div>
+                <div class="px-center" id="text-result"> result found...</div>
+                <div class="px-center" id="text-result-1"> results found...</div>
+                <div class="px-center" id="text-result-2">Sorry coudn't find anything.</div>
+            </div>
+
+            <!--search results ends here -->
+
+
+
+            <div id="service">
+                <div class="box">
+
+                    <img src="images/alphonsomango1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Alphonso Mango</h2>
+                    <p class="textcenter font1">Origin:-Devgadh, Ratnagiri<br>
+                        Feature:-Fresh,Juicy & Pulpy.<br>
+                        Alphonso mango is surely the number one in taste and flavor. The main producer of this
+                        delightful fruit is the state of Maharashtra.
+                    </p>
+                </div>
+                <div class="box">
+
+                    <img src="images/langdamango1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Langda Mango</h2>
+                    <p class="textcenter font1">Origin:-Banaras<br>
+                        Feature:Langra is the most well known mango variety of the North Indian sub-continent. <br>It
+                        originally belongs to Varanasi and the best quality is from Patna and Behar.The fruit has a
+                        juicy flavor, Sweet and tart taste.
+                    </p>
+                </div>
+
+                <div class="box">
+
+                    <img src="images/payarimango1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Payari Mango</h2>
+                    <p class="textcenter font1">Origin:-Devgadh, Ratnagiri <br>
+                        Feature:-Fresh & Juicy . <br>
+                        When it comes to aamras and mango juice there is no match of payari. The main producer of this
+                        delightful fruit is the state of Maharashtra
+                    </p>
+                </div>
+
+                <div class="box">
+
+
+                    <img src="images/kesarmango1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Kesar Mango</h2>
+                    <p class="textcenter font1"> Origin:-Gujarat<br>
+                        Feature:Pulpy. <br> The main producer of this delightful fruit is the state of Gujarat
+                    </p>
+                </div>
+
+                <div class="box">
+                    <img src="images/chausamango1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Chausa Mango</h2>
+                    <p class="textcenter font1"> Origin:-North India <br>
+                        Feature:Juicy & Sweet.This mango is consumed by sucking.Chausa has its root from
+                        Multan,Pakistan. The main producer of this delightful fruit is North Indian states.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/badamimango.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Badami Mango</h2>
+                    <p class="textcenter font1"> Origin:-Karnataka and Andhra Pradesh <br>
+                        Feature:The most popular and one of the most consumed mangoes in India.Karnataka and Andhra
+                        Pradesh states are the leading producer.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/rajapurimango.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Rajapuri Mango</h2>
+                    <p class="textcenter font1"> Origin:-Uttar Pradesh<br>
+                        Feature: Probably one of the biggest mango from the family. The taste is little tangy sweet.Many
+                        people use it raw to make mango pickles.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/dasheri.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Dasheri Mango </h2>
+                    <p class="textcenter font1"> Origin:-Lucknow<br>
+                        Feature:Fresh & Pulpy. <br>Dasheri is long and oval shaped with yellow green skin when ripe. The
+                        main producer of this delightful fruit is the state of Uttar Pradesh.
+                    </p>
+                </div>
+
+                <!--<div class="box">-->
+                <!--    <img src="images/service-img1.jpg" alt="">-->
+                <!--    <h2 class="textcenter h-secondary">Grapes</h2>-->
+                <!--    <p class="textcenter font1">A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis. Grapes can be eaten fresh as table grapes or they can be used for making wine, jam, grape juice, jelly, grape seed extract, raisins, vinegar, and grape seed oil.</p>-->
+                <!--</div>-->
+                <div class="box">
+                    <img src="images/orange1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Orange</h2>
+                    <p class="textcenter font1"> The orange is the fruit of various citrus species in the family
+                        Rutaceae; it primarily refers to Citrus × sinensis, which is also called sweet orange, to
+                        distinguish it from the related Citrus × aurantium, referred to as bitter orange.</p>
+                </div>
+
+                <div class="box">
+                    <img src="images/apricots.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Apricots</h2>
+                    <p class="textcenter font1">Apricots are small, yellow, tart-tasting fruits with a stone in the
+                        middle.
+                        Like most fruits, they are full of vitamins and minerals and make a great addition to a
+                        healthful diet.It contains Vitamin A & Vitamin C. They are low in calories & fat.</p>
+                </div>
+                <div class="box">
+                    <img src="images/watermelon.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Watermelon</h2>
+                    <p class="textcenter font1">Watermelon has a high water content. This makes it hydrating and helps
+                        you feel full. Watermelon is a low-calorie fruit high in some nutrients, especially carotenoids,
+                        vitamin C and cucurbitacin E. It may help to improve heart health & digestion. It is good for
+                        hair & skin. It may help receive muscle soreness & may help to prevent Macular Degeneration.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/pear.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Pears</h2>
+                    <p class="textcenter font1">Pears are especially rich in folate, vitamin C, copper, and potassium.
+                        They’re also a good source of polyphenol antioxidants. Pears may help reduce your risk of type 2
+                        diabetes due to their fiber and anthocyanin contents. They are good for heart & eye health. This
+                        may help you lose weight.</p>
+                </div>
+                <div class="box">
+                    <img src="images/pomegranate.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Pomegranate</h2>
+                    <p class="textcenter font1">The pomegranate is a fruit-bearing deciduous shrub in the family
+                        Lythraceae, subfamily Punicoideae, that grows between 5 and 10 m tall. The pomegranate
+                        originated in the region extending from Iran to northern India, and has been cultivated since
+                        ancient times throughout the Mediterranean region.</p>
+                </div>
+                <div class="box">
+                    <img src="images/blueberry1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Blueberries</h2>
+                    <p class="textcenter font1">Origin:-USA<br>
+                        Feature:-Blueberries contain high amount of potassium and vitamin C, making them the top choice
+                        of doctors and nutritionist. They help lower the risk of heart disease and cancer.They have
+                        sweet and sour taste.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/guava1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Guava</h2>
+                    <p class="textcenter font1">Feature:-Guava is one of the richest sources of dietary fiber.Guava also
+                        helps in regulating metabolism which leads to weight loss.Guavas are also rich in calcium as
+                        they contain 18 gm of the mineral per 100 gm of the fruit.</p>
+                </div>
+
+                <div class="box">
+                    <img src="images/strawberry.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Strawberry</h2>
+                    <p class="textcenter font1">Origin:-Mahabaleshwar(Maharashtra)<br>
+                        Feature:-Strawberries aren't true berries like blueberries. They have sweet and sour taste. They
+                        are believed to help reduce the risk of heart disease and certain cancers.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/papaya.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Papaya</h2>
+                    <p class="textcenter font1">Feature:-Papaya are a soft, fleshy fruit that can be used in a wide
+                        variety of culinary ways . It can be added to salads, smoothies, and other dishes. Health
+                        benefits of consuming papaya include a reduced risk of heart disease, diabetes, cancer, aiding
+                        in digestion, improving blood glucose control in people with diabetes, lowering blood pressure ,
+                        and improving wound healing. </p>
+                </div>
+                <div class="box">
+                    <img src="images/fig.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Fig</h2>
+                    <p class="textcenter font1">Feature:- Figs are high in natural sugars, minerals and soluble fibre.
+                        Figs are rich in minerals including potassium, calcium, magnesium, iron and copper and are a
+                        good source of antioxidant vitamins A and K that contribute to health and wellness.</p>
+                </div>
+                <div class="box">
+                    <img src="images/pineapple.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Pineapple</h2>
+                    <p class="textcenter font1">Feature:- Pineapples are tropical fruits that are rich in vitamins,
+                        enzymes and antioxidants. They may help boost the immune system, build strong bones and aid
+                        indigestion. And, despite their sweetness, pineapples are low in calories. </p>
+                </div>
+                <div class="box">
+                    <img src="images/avocado.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Avocado</h2>
+                    <p class="textcenter font1">This fruit is incredibly Nutritious. They contain more potassium than
+                        Bananas which supports healthy blood pressure levels. It is loaded with Heart-Healthy
+                        monounsaturated fatty acids. eating avocado or avocado oil with vegetables can dramatically
+                        increase the number of antioxidants you take in. They are good for eyes. Avacado oil extract can
+                        significantly reduce symptoms of osteoarthritis. May help to lose weight. </p>
+                </div>
+                <div class="box">
+                    <img src="images/blackberry1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Blackberry</h2>
+                    <p class="textcenter font1">Origin:-USA<br>
+                        Feature:-The soft fruit is popular for use in desserts, jams, seedless jelly, and sometimes
+                        wine.The soft fruit is popular for use in desserts, jams, seedless jelly, and sometimes
+                        wine.Blackberries contain high levels of antioxidants, such as anthocyanins. Antioxidants help
+                        people to fight against the adverse impact of free radicals in the body.</p>
+                </div>
+                <!--<div class="box">-->
+                <!--    <img src="images/cherry.jpg" alt="">-->
+                <!--    <h2 class="textcenter h-secondary">Cherry</h2>-->
+                <!--    <p class="textcenter font1">The pomegranate is a fruit-bearing deciduous shrub in the family Lythraceae, subfamily Punicoideae, that grows between 5 and 10 m tall. The pomegranate originated in the region extending from Iran to northern India, and has been cultivated since ancient times throughout the Mediterranean region.</p>-->
+                <!--</div>-->
+                <div class="box">
+                    <img src="images/mulberry.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Mulberry</h2>
+                    <p class="textcenter font1">Origin:-Karnataka,Himachal Pradesh <br>
+                        Feature:- Mulberries are very soft and dark red in colour. They have sweet and spur taste. They
+                        are a good source of iron, vitamin C and they also help lower cholesterol, blood sugar and
+                        cancer risk.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/mangosteen.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Mangosteen</h2>
+                    <p class="textcenter font1">Feature:-Mangosteen is an exotic, tropical fruit with a slightly sweet
+                        and sour flavor.Mangosteen provides a variety of essential vitamins, minerals, and fiber while
+                        being low in calories. These nutrients are important for maintaining many functions in the body.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/sweetlime.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Sweet lime</h2>
+                    <p class="textcenter font1">Feature :- Sweet lime or mosambi is a popular tropical fruit, available
+                        in all seasons. This sweet and sour tasting fruit looks more like a lime for appearance and is
+                        mostly consumed in the form of juice than as a whole fruit.Sweet lime juice is refreshing,
+                        serves as an energy drink and acts as a natural coolant to the body by providing varied health
+                        benefits including prevention of stroke, hydrating the body, helping in motion sickness and also
+                        by improving the joint health, besides several beauty benefits.</p>
+                </div>
+                <div class="box">
+                    <img src="images/banana.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Banana</h2>
+                    <p class="textcenter font1">Feature:- Bananas are among the world’s most popular fruits. Bananas are
+                        rich in fiber, antioxidants and several nutrients. A medium-sized banana has about 105
+                        calories.Bananas can help moderate blood sugar levels after meals and may reduce appetite by
+                        slowing stomach emptying.</p>
+                </div>
+                <div class="box">
+                    <img src="images/muskmelon.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Muskmelon</h2>
+                    <p class="textcenter font1">Muskmelon is a sweet, flavorful fruit that’s known for its vibrant flesh
+                        and culinary versatility. In addition to its unique flavor, muskmelon provides a wealth of
+                        important nutrients and has been associated with many health benefits. It contains Vitamin A &
+                        Vitamin C. Helps to weight loss in several ways. It supports healthy digestion. </p>
+                </div>
+                <div class="box">
+                    <img src="images/custardapple.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Custard Apple</h2>
+                    <p class="textcenter font1">contains over 30% of the RDI for vitamin B6, a nutrient that regulates
+                        mood and may help prevent depression. It promotes eye health. It support healthy blood pressure
+                        levels. It may promote good digestion. It helps to fight with inflammation. It is an Immune
+                        booster.</p>
+                </div>
+                <div class="box">
+                    <img src="images/lychee.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Lychee</h2>
+                    <p class="textcenter font1">Feature :- Lychees contain several healthy minerals, vitamins, and
+                        antioxidants, such as potassium, copper, vitamin C, epicatechin, and rutin. These may help
+                        protect against heart disease, cancer, and diabetes. </p>
+                </div>
+                <div class="box">
+                    <img src="images/californiacherry1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">California Cherry</h2>
+                    <p class="textcenter font1">Origin:-USA<br>
+                        Feature_:Cherries are small, round, deep red stone fruit.Cherries are a good source of fibre,
+                        vitamins and minerals, including potassium, calcium, vitamin A and folic acid.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/kashmiricherry.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Kashmiri Cherry</h2>
+                    <p class="textcenter font1">Origin:-India <br>
+                        Feature:-Cherries contain melatonin which is five times more than the blackberries, strawberries
+                        and helps cure insomnia. It is also suggested for jet lag. Cherries give you the energy
+                        necessary for the body as they not only help in building blood but they also give you
+                        flexibility due to sodium content present in them.</p>
+                </div>
+                <div class="box">
+                    <img src="images/chilecherry.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Chile's Cherry</h2>
+                    <p class="textcenter font1">Origin:-Chile<br>
+                        Feature:- Chilean Cherries are a sweet seasonal treat, but they’re also rich in antioxidants and
+                        packed with immunity-boosting vitamin C. A one-cup serving delivers 25% of the recommended daily
+                        amount.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/newzealandcherry.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Newzealand Cherry</h2>
+                    <p class="textcenter font1">Origin:-New Zealand<br>
+                        Feature:- As well as tasting great, cherries are great for your health as they are a superfruit
+                        high in antioxidants (anthocyanins and bioflavonoids), fibre, potassium, and vitamin A, C, and
+                        K. Protect against Alzheimers – flavonoids and procyanidin can help guard neuronal cells
+                        reducing oxidant stress and fighting dementia
+                        .</p>
+                </div>
+                <div class="box">
+                    <img src="images/himachalgreenalmond.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Himachal Green Almond</h2>
+                    <p class="textcenter font1">Green almonds offer the same nutritional benefits as dry almonds
+                        including vitamin C, vitamin E, iron, calcium, magnesium, riboflavin, and L-carnitine. Green
+                        almonds also offer protein and fiber and have a low glycemic index.</p>
+                </div>
+                <div class="box">
+                    <img src="images/persimmon.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Persimmon</h2>
+                    <p class="textcenter font1">Persimmons can be eaten fresh, dried or cooked and are commonly used
+                        around the world in jellies, drinks, pies, curries and puddings.These colorful fruits are low in
+                        calories and loaded with fiber, making them a weight loss-friendly food.Aside from vitamins and
+                        minerals, persimmons contain a wide array of plant compounds, including tannins, flavonoids and
+                        carotenoids, which can positively impact your health.</p>
+                </div>
+                <div class="box">
+                    <img src="images/dragonfruit.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Dragon Fruit</h2>
+                    <p class="textcenter font1">Feature :- This fruit comes in red- and yellow-skinned varieties. It’s
+                        naturally fat-free and high in fiber. It makes for a good snack because it can help keep you
+                        full for longer between meals. It may help lower your blood sugar. </p>
+                </div>
+                <div class="box">
+                    <img src="images/plum.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Plum(Indian Prune) </h2>
+                    <p class="textcenter font1">Feature :- Plums belong to the same family as peaches, nectarines, and
+                        apricots.The vitamin C in plums helps your body heal, build muscle, and form blood vessels. It's
+                        great for your eyes, too.</p>
+                </div>
+                <div class="box">
+                    <img src="images/dates.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Fresh Dates</h2>
+                    <p class="textcenter font1">Feature:- Fresh dates are fairly small in size and range in color from
+                        bright red to bright yellow. Dates are high in fiber, which may be beneficial for preventing
+                        constipation and controlling blood sugar control.</p>
+                </div>
+                <div class="box">
+                    <img src="images/miniorange.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Mini Orange</h2>
+                    <p class="textcenter font1">Feature:-Clementines are a hybrid of mandarin and sweet oranges.These
+                        tiny fruits are bright orange, easy to peel, sweeter than most other citrus fruits, and
+                        typically seedless.They’re a great source of vitamin C and antioxidants.</p>
+                </div>
+                <div class="box">
+                    <img src="images/jamun.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Jamun</h2>
+                    <p class="textcenter font1">Feature:- Native to India, jamun is a pretty fruit with rich colour and
+                        sweet taste. The fruit is popular for its deep blue or purple colour. Also known as black plum
+                        or Java plum. Loaded with vitamin C and iron, jamun increases hemoglobin. With the increased
+                        number of hemoglobin, your blood will carry more oxygen to the organs and keep you healthy. The
+                        iron present in the fruit also purifies your blood.</p>
+                </div>
+                <div class="box">
+                    <img src="images/kiwi.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Kiwi</h2>
+                    <p class="textcenter font1">It contains Vitamin C, Vitamin K, Vitamin E, Folate & Potassium. It
+                        helps to treat Asthama & it is good for digestive system. It helps to manage blood pressure & to
+                        reduce blood clotting. If you have a bleeding disorder or are about to have surgery, avoid
+                        eating kiwis.</p>
+                </div>
+                <div class="box">
+                    <img src="images/raspberry.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Raspberry</h2>
+                    <p class="textcenter font1">Raspberries may reduce arthritis risk, aid weight loss and decrease
+                        signs of aging. It contains Vitamin C which is necessary for healthy skin. Raspberries may
+                        positively impact your blood sugar due to their high fiber and tannin content.</p>
+                </div>
+                <div class="box">
+                    <img src="images/goldenberry.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Goldenberry</h2>
+                    <p class="textcenter font1">Origin:-India <br>
+                        Feature:-The golden berry is a yellow-orange fruit wrapped in a papery husk, similar in
+                        appearance to a tomatillo. Golden berries have a tart, tangy taste similar to tropical
+                        fruits.They are rich in carotenoids, which are antioxidants that help to prevent or slow down
+                        damage to your cells. These antioxidants can also help to strengthen your cardiovascular system.
+                        Golden berries contain phytosterols, a type of antioxidant that can help lower the amount of
+                        cholesterol ol in your blood, especially so-called “bad” (LDL) cholesterol.</p>
+                </div>
+                <div class="box">
+                    <img src="images/washingtonapple.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Washington Apple</h2>
+                    <p class="textcenter font1">Origin:-USA<br>
+                        Feature:Washington apples are rich in antioxidants and have immense immunity boosting
+                        properties. These apples have more than 80% of water and help you to lose weight without having
+                        any sort of stress.</p>
+                </div>
+                <div class="box">
+                    <img src="images/newzealandapple.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Royal Gala Apple</h2>
+                    <p class="textcenter font1">Origin:New Zealand<br>
+                        Feature:-These apples are fibrous, sweet, aromatic, juicy, and sugary and often comes with white
+                        flesh. Not just in flavors, Royal Gala apples are also known for their nutritious benefits.About
+                        10mg of vitamin C present in the apple is beneficial for the immune system and has the potential
+                        to produce collagen for healthy skin and wound healing.</p>
+                </div>
+                <div class="box">
+                    <img src="images/kashmiriapple.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Kashmir Apple </h2>
+                    <p class="textcenter font1">Origin:-India<br>
+                        Feature:Kashmir proudly known as the paradise of earth is also home to temperate fruits like
+                        apple for which the state is very famous across the globe. This apples are very soft and sweet.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/japanesefujiapple.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Japanese Fuji Apple</h2>
+                    <p class="textcenter font1">Origin:-Japan <br>
+                        Feature:-It is large and fragrant, and there is a great balance between the sweetness and
+                        sourness of the fruit. With its very crisp texture, abundance of juice, and a clear and dense
+                        sweetness, it is very popular.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="images/egyptapple.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Egypt Apple </h2>
+                    <p class="textcenter font1">Origin:-Egypt <br>
+                        Feature:-It is large and have sweet taste. The apple are not too soft but they are less crispy
+                        compared to Fuji apple.</p>
+                </div>
+
+
+                <div class="box">
+
+                    <img src="images/redglobe.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Red Globe</h2>
+
+
+                    <p class="textcenter font1">Red Globe grapes are a large, seeded table grape enjoyed by people
+                        around the world, especially in Asian countries. They have a rosy, red color and firm, crisp
+                        flesh.
+                        Red Globe grapes are suggested for snacking and can even be frozen to use as ice cubes.
+
+                    </p>
+
+                </div>
+
+                <div class="box">
+
+                    <img src="images/blackgrapes.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Black Grapes</h2>
+
+
+                    <p class="textcenter font1">Grapes contain many nutrients important for bone health, including
+                        calcium, magnesium, phosphorus and vitamin K.
+                        Black Grapes are delicious and easy to add to your diet for breakfast, lunch, dinner or simply
+                        as a convenient, healthy snack.
+
+
+                    </p>
+
+                </div>
+
+
+                <div class="box">
+
+                    <img src="images/nectarine1.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Nectarine</h2>
+
+
+                    <p class="textcenter font1">Nectarines are a round, yellow-red stone fruit that are about the size
+                        of an apple. They have a smooth, firm skin on the outside and a white-yellow flesh inside .
+                        They are low in calories & fats. They are rich in fiber & contains Vitamin C, Vitamin A &
+                        Potassium. It helps to improve metabolism, digestive system & heart health.
+
+
+                    </p>
+
+                </div>
+
+
+                <div class="box">
+
+                    <img src="images/blackseedlessgrape.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Black Seedless Grapes</h2>
+
+
+                    <p class="textcenter font1">The health benefits of black grapes have been studied extensively. The
+                        chemicals they contain can give you healthier hair and skin, improve your heart health
+
+
+                    </p>
+
+                </div>
+
+                <div class="box">
+
+                    <img src="images/peach.jpg" alt="">
+                    <h2 class="textcenter h-secondary">Peaches</h2>
+
+
+                    <p class="textcenter font1">They are high in fiber & contains minerals. It helps to protect your
+                        body from ageing & disease. It is good for digestive system
+
+
+                    </p>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div id="Services" class="tabcontent">
+
+            <!-- <p>Tokyo is the capital of Japan.</p> -->
+            <div id="service">
+                <div class="box">
+                    <h2 class="textcenter h-secondary ">Free Home Delivery</h2>
+                    <img src="images/delivery.svg" alt="">
+
+                    <p class="textcenter givegreyfont">We provide free home delivery across Mumbai within 4 hours</p>
+                </div>
+                <div class="box">
+                    <h2 class="textcenter h-secondary "> Home Delivery</h2>
+                    <img src="images/deliveryindia.svg" alt="">
+
+                    <p class="textcenter givegreyfont">We also provide home delivery across India. </p>
+                </div>
+
+            </div>
+        </div>
+        <div id="SpecialServices" class="tabcontent">
+            <div id="service">
+                <div class="box">
+                    <h2 class="textcenter h-secondary ">A basket of fruits is a promise of a #healthy life!!! </h2>
+                    <img src="images/fruitbasket.jpg" alt="">
+
+                    <p class="textcenter givegreyfont"><br>
+
+                        <b>We prepare fruit basket for various occasions such as ring ceremony, wedding, anniversary,
+                            etc.</b>
+                    </p>
+                </div>
+                <div class="box">
+                    <h2 class="textcenter h-secondary ">Catering Service</h2>
+                    <img src="images/catering1.jpg" alt="">
+
+                    <p class="textcenter givegreyfont">We also accept orders for fruit catering in various events such
+                        as wedding, ring ceremony, etc</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- services section ends here  -->
+
+
+    <!-- footer starts here  -->
+    <footer id="footer" class="textcenter">
+        <div id="footertype">
+            <span class="type1"></span>
+        </div>
+    </footer>
+    <!-- footer ends here  -->
+    <!-- // typedjs for footer stsrts here  -->
+    <script>
+        var typed = new Typed('.type1', {
+            strings: ['@Copyright All Right Reserved.', 'Website Made by Sahil shaikh.'],
+            //   smartBackspace: true // Default value
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+            // shuffle: true
+        });
+    </script>
+    <!-- typedjs for footer ends here  -->
+
+    <script>
+        function opentab(evt, fruitsection) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(fruitsection).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // below code for active button in tab 
+        document.getElementById("defaultOpen").click();
+
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue, temp = 0;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("service");
+            li = ul.getElementsByTagName('div');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("h2")[0];
+                b = li[i].getElementsByTagName("p")[0];
+
+
+                txtValue = a.textContent || a.innerText;
+                txtValue1 = b.textContent || b.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue1.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    temp += 1;
+
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+            if (temp == 1) {
+                document.getElementById("num-result").style.display = "block";
+                document.getElementById("num-result").innerHTML = temp;
+                document.getElementById("text-result").style.display = "block";
+                document.getElementById("text-result-1").style.display = "none";
+                document.getElementById("text-result-2").style.display = "none";
+
+            } else if (temp == li.length) {
+                document.getElementById("num-result").style.display = "none";
+                document.getElementById("text-result-1").style.display = "none";
+                document.getElementById("text-result").style.display = "none";
+                document.getElementById("text-result-2").style.display = "none";
+
+            }
+            else if (temp == 0) {
+                document.getElementById("num-result").style.display = "none";
+                document.getElementById("text-result-1").style.display = "none";
+                document.getElementById("text-result").style.display = "none";
+                document.getElementById("text-result-2").style.display = "block";
+
+            }
+            else {
+                document.getElementById("num-result").style.display = "block";
+                document.getElementById("num-result").innerHTML = temp;
+                document.getElementById("text-result-1").style.display = "block";
+                document.getElementById("text-result").style.display = "none";
+                document.getElementById("text-result-2").style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("footer").style.bottom = "-100px";
+
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+                document.getElementById("footer").style.bottom = "0";
+
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordian");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                // this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100%";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
